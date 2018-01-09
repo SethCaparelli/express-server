@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const port = process.env.PORT || 3000;
 const data = [{
     id: "1",
     cohortName: '17-01-WD-DP',
@@ -54,4 +55,4 @@ app.get('/:id', function (request, response) {
     }
 });
 
-app.listen(3000);
+app.listen(port)
